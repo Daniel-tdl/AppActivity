@@ -4,7 +4,7 @@ module.exports = app => {
         const activity = {...req.body }
         if (req.params.id) activity.id = req.params.id
 
-        var erros = []
+        let erros = []
         let erro = ""
 
         try {
@@ -30,12 +30,14 @@ module.exports = app => {
 
             var data = {
                 status: "error",
-                erros: erros
+                erros
             };
 
-            if (erros.length > 0)
-                return res.status(500).json({ data: data })
+            if (erros.length > 1){
+                return res.status(500).send(data)
+            }
         } catch (error) {
+            console.log('error')
             return res.status(400).send(error)
         }
 
@@ -56,14 +58,14 @@ module.exports = app => {
         app.db('tbActivity')
             .where({ id: req.params.id })
             .first()
-            .then(activity => res.status(200).json({ data: activity }))
+            .then(activity => res.status(200).json({ activity: activity }))
             .catch(err => res.status(500).send(err))
     }
 
     const get = async(req, res) => {
         app.db('tbActivity')
             .select('*')
-            .then(activitys => res.status(200).json({ data: activitys }))
+            .then(activitys => res.status(200).json({ activitys: activitys }))
             .catch(err => res.status(500).send(err))
     }
 

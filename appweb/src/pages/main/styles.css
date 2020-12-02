@@ -1,0 +1,136 @@
+.activitys-list {
+    max-width: 700px;
+    margin: 20px auto 0;
+    padding: 0 20px;
+}
+
+.activitys-list article {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.activitys-list article p {
+    font-size: 16px;
+    color: #999;
+    margin-top: 5px;
+    line-height: 24px;
+}
+
+.activitys-list article a {
+    height: 42px;
+    border-radius: 5px;
+    border: 2px solid #da552f;
+    background: none;
+    margin-top: 10px;
+    color: #da552f;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.activitys-list article a:hover {
+    background: #da552f;
+    color: #fff;
+}
+
+.activitys-list .botao-cadastrar a {
+    height: 42px;
+    border-radius: 5px;
+    border: 2px solid #7b7ddd;
+    background: none;
+    margin-top: 10px;
+    color: #7b7ddd;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+    margin-bottom: 20px;
+}
+
+.activitys-list .botao-cadastrar a:hover {
+    background: #7b7ddd;
+    color: #fff;
+}
+
+.activitys-list .botoes-activitys {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.activitys-list .botoes-activitys button {
+    padding: 10px; 
+    border-radius: 5px;
+    border: 0;
+    background: #da552f;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;   
+}
+
+.promotion-form-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.promotion-form-group label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #555555;
+}
+
+.promotion-form-group input {
+    border: 1px solid #aaaaaa;
+    border-radius: 8px;
+    background-color: #fff;
+    height: 36px;
+    padding: 0 10px;
+}
+
+.promotion-form-group textarea {
+    border: 1px solid #aaaaaa;
+    border-radius: 8px;
+    background-color: #fff;
+    height: 70px;
+    padding: 0 10px;
+}
+
+.promotion-form-group select {
+    border: 1px solid #aaaaaa;
+    border-radius: 8px;
+    background-color: #fff;
+    height: 36px;
+    padding: 0 10px;
+}
+
+.promotion-form-group button {
+    height: 42px;
+    border-radius: 5px;
+    border: 2px solid #7b7ddd;
+    background: none;
+    margin-top: 10px;
+    color: #7b7ddd;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s;
+    margin-bottom: 20px;
+}
+
+.promotion-form-group button:hover {
+    background: #7b7ddd;
+    color: #fff;
+}
